@@ -10,7 +10,7 @@ define cork = Character("Штопор", color="#400404")
 # а eileen happy — "eileen happy.webp", и тогда они появятся в игре.
 
 init: #priority number:
-    $ right2 = Position(xalign=0.8, yalign=0.5)
+    $ right2 = Position(xalign=0.8, yalign=0.56)
 
 # Игра начинается здесь:
 label start:
