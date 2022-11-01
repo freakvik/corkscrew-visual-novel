@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 12: expected statement.
-    init 
-         ^
+File "game/script.rpy", line 71: end of line expected.
+    show cork_unhappy at right2 easeinright
+                                ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Nov  1 03:44:08 2022
+Tue Nov  1 10:53:30 2022
