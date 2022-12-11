@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 199, in script
-    сork "Что ты имеешь ввиду?"
+  File "game/script.rpy", line 299, in script
+    сork "..."
 Exception: Sayer 'сork' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 199, in script
-    сork "Что ты имеешь ввиду?"
+  File "game/script.rpy", line 299, in script
+    сork "..."
   File "C:\Users\mpn19\Desktop\renpy\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
     who = eval_who(self.who, self.who_fast)
   File "C:\Users\mpn19\Desktop\renpy\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
@@ -19,4 +19,4 @@ Exception: Sayer 'сork' is not defined.
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Corkscrew novel 1.0
-Wed Nov 30 00:04:12 2022
+Sat Dec 10 02:25:26 2022

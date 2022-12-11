@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 187: choice menuitem expects a non-empty block.
-    "Нет, я ей не доверяю.":
-                            ^
+File "game/script.rpy", line 322: end of line expected.
+    show cork_unhappy with dissolve at right2
+                                    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed Nov 30 00:02:59 2022
+Sun Dec 11 03:09:05 2022
