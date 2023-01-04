@@ -18,7 +18,7 @@ define config.name = _("Corkscrew novel")
 ## Определяет, показывать ли заголовок, данный выше, на экране главного меню.
 ## Установите на False, чтобы спрятать заголовок.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## Версия игры.
@@ -30,6 +30,17 @@ define config.version = "1.0"
 ## Для отделения абзацев оставляйте между ними пустую строку.
 
 define gui.about = _p("""
+Thanks everyone for playing my game!
+
+Author - Cust (twt and vk: @cust_vik)
+
+All rights and materials in this game reserved to Running With Scissors! Non-commercial use!
+
+Music by:
+
+InsideSky - https://soundcloud.com/insidesky/sets/instrumental-hip-hop-beats
+
+ERLAX - https://erlax.beatstars.com/beat/hiroshima-6845922
 """)
 
 
@@ -62,7 +73,7 @@ define config.has_voice = True
 ## проигрываться в главном меню. Этот файл продолжит проигрываться во время
 ## игры, если не будет остановлен, или не начнёт проигрываться другой аудиофайл.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "main-menu-theme.mp3"
 
 
 ## Переходы ####################################################################
@@ -121,7 +132,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## в то время как любая другая цифра — это количество символов, печатаемых в
 ## секунду.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 100
 
 
 ## Стандартная задержка авточтения. Большие значения означают долгие ожидания, а
@@ -188,8 +199,11 @@ init python:
 
     ## Чтобы архивировать файлы, классифицируйте их, например, как 'archive'.
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.png', 'archive')
+    build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.ogg', 'archive')
+    build.classify('game/**.mp3', 'archive')
+    build.classify('game/**.rpy', 'archive')
 
     ## Файлы, соответствующие образцам документации, дублируются в приложениях
     ## Mac, чтобы они появлялись и в приложении, и в zip архиве.
