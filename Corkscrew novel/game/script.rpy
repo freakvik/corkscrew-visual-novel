@@ -586,7 +586,7 @@ label bath:
             col "Как будто тебе такая мелочь как-то поможет."
             cork bath_unhappy "Мелочь? Ну уж извините! В этом городе я держу неоспоримый рекорд."
             col "Иди уже отсюда, идиот."
-            сork bath_neutral "А вот сама бы и пошла отсюда, места тут предостаточно."
+            cork bath_neutral "А вот сама бы и пошла отсюда, места тут предостаточно."
             col bath_unhappy "Надеюсь, ты подохнешь, тупица."
             cork bath_happy "Взаимно!"
             hide collegue bath_unhappy with easeoutleft
@@ -615,7 +615,7 @@ label home:
 
     stop music fadeout 1
     play sound boom
-    scene toilet2 with vpunch
+    scene bg toilet2 with vpunch
     pause 1.0
     play music battle fadein 1
     show cork drunk at right2 with dissolve
@@ -663,6 +663,7 @@ label home:
             pause 5.0
             play music normal fadein 1
             scene bg backyard with dissolve
+            show cork unhappy at right2 with dissolve
             cork unhappy "Фух... Тс, чёрт, теперь сиди чини дом после них. Идиоты. Полные идиоты."
             cork neutral "Зато одной проблемой из прошлого меньше. Возможно и пиво появится скоро."
             stop music fadeout 1
