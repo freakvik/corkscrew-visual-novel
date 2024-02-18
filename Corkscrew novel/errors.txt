@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 389: style property ground is not known.
-    ground "menu_slideshow"
-          ^
+File "game/screens.rpy", line 322: reached end of line when expecting ':'.
+    if (language == "english")
+                              ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed Jan  4 06:10:22 2023
+Sun Jan 21 00:55:01 2024

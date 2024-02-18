@@ -38,9 +38,9 @@ All rights and materials in this game reserved to Running With Scissors! Non-com
 
 Music by:
 
-InsideSky - https://soundcloud.com/insidesky/sets/instrumental-hip-hop-beats
+InsideSky - {a=https://soundcloud.com/insidesky/sets/instrumental-hip-hop-beats}SoundCloud{/a}
 
-ERLAX - https://erlax.beatstars.com/beat/hiroshima-6845922
+ERLAX - {a=https://erlax.beatstars.com/beat/hiroshima-6845922}Beatstars{/a}
 """)
 
 

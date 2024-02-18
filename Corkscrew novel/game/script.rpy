@@ -1,12 +1,12 @@
 ﻿#characters
-define cork = Character("Штопор", color="#bd2323", image="cork") #main character
-define cashier = Character("Кассирша", color="#d39323", image='cashier') #for start
-define bt = Character("Барменша", color="#2EAFCE", image="bartender") #for pub
-define man = Character("Мужик", color="#bfd628", image='man') #for pub
-define speaker = Character("Диктор", color="#ffffff") #for concert
-define bear = Character("Член группировки \"Медведи\"", color="#03953e", image="bear") #for concert
-define col = Character("Бывшая коллега", color="#6d1e02", image="collegue") #for bath
-define old_ = Character("Старик", color="#e310cb", image="old") #for room
+define cork = Character(_("Штопор"), color="#bd2323", image="cork") #main character
+define cashier = Character(_("Кассирша"), color="#d39323", image='cashier') #for start
+define bt = Character(_("Барменша"), color="#2EAFCE", image="bartender") #for pub
+define man = Character(_("Мужик"), color="#bfd628", image='man') #for pub
+define speaker = Character(_("Диктор"), color="#ffffff") #for concert
+define bear = Character(_("Член группировки \"Медведи\""), color="#03953e", image="bear") #for concert
+define col = Character(_("Бывшая коллега"), color="#6d1e02", image="collegue") #for bath
+define oldman = Character(_("Старик"), color="#e310cb", image="oldman") #for room
 
 define info = False #knowledge about generator
 define details = False #bartender knowledge about generator 
@@ -21,17 +21,17 @@ define audio.gun = "sounds/gun.ogg"
 define audio.punch = "sounds/punch.ogg"
 
 image menu_slideshow:
-    "gui/menu/slide (1).png" 
+    "gui/menu/slide (1).jpg" 
     pause 10.0
-    "gui/menu/slide (2).png"
+    "gui/menu/slide (2).jpg"
     pause 10.0
-    "gui/menu/slide (3).png"
+    "gui/menu/slide (3).jpg"
     pause 10.0
-    "gui/menu/slide (4).png"
+    "gui/menu/slide (4).jpg"
     pause 10.0
-    "gui/menu/slide (5).png"
+    "gui/menu/slide (5).jpg"
     pause 10.0
-    "gui/menu/slide (6).png"
+    "gui/menu/slide (6).jpg"
     pause 10.0
     repeat
 
@@ -698,43 +698,43 @@ label home:
 
 label room:
 
-    show old_ unhappy at left2 with moveinleft
-    old_ "ТАК. Чт-то тут п-происходит?"
-    cork puzzled "Дед, а ты то откуда здесь вылез? Вроде не магазин, акции на гречку нет."
-    old_ "М-молчи, ирод! Ты п-пошто девчульку мою пуг-гаешь?"
+    show oldman unhappy at left2 with moveinleft
+    oldman "ТАК. Чт-то тут п-происходит?"
+    cork bath_puzzled "Дед, а ты то откуда здесь вылез? Вроде не магазин, акции на гречку нет."
+    oldman "М-молчи, ирод! Ты п-пошто девчульку мою пуг-гаешь?"
     cork "Погоди, какую ещё девчульку? Не знаю я никаких девочек, я таким не интересуюсь. Если надо, то иди В.П.И. ..."
-    old_ "Ты! Идёшь с-со мной!"
-    cork neutral "Куда? На кладбище сразу? Ну ладно, помогу дедушке через дорогу перейти."
+    oldman "Ты! Идёшь с-со мной!"
+    cork bath_neutral "Куда? На кладбище сразу? Ну ладно, помогу дедушке через дорогу перейти."
 
     scene bg room with dissolve
-    show old_ neutral at left2 with easeinleft
+    show oldman neutral at left2 with easeinleft
     show cork neutral at right2 with easeinright
 
-    old_ neutral "Т-так, молод-дой человек!"
-    cork happy "Я вас слушаю, хоть я уже и не такой молодой."
-    old_ unhappy "Не п-перебивай, когд-да с тобой старшие г-говорят!"
-    cork neutral "Молчу-молчу. А вы, дяденька, кто вообще? И зачем вы привели меня в такие роскошные апартаменты? Ваша усыпальня, то есть, спальня?"
-    old_ neutral "А в-вот сейч-час и узнаешь."
+    oldman "Т-так, молод-дой человек!"
+    cork bath_happy "Я вас слушаю, хоть я уже и не такой молодой."
+    oldman unhappy "Не п-перебивай, когд-да с тобой старшие г-говорят!"
+    cork bath_neutral "Молчу-молчу. А вы, дяденька, кто вообще? И зачем вы привели меня в такие роскошные апартаменты? Ваша усыпальня, то есть, спальня?"
+    oldman neutral "А в-вот сейч-час и узнаешь."
     cork "Да ладно, и что ты со мной сделаешь сейчас? Учти, я не плотник, гроб тебе из кровати сколотить не смогу."
-    old_ unhappy "Себе если т-только. Ложись н-на кровать, живо!"
-    cork puzzled "Это ещё зачем? Это какой-то агрессивный маркетинг хостела? У меня денег с собой нет, только полотенце это."
-    old_ neutral "И полот-тенце снимай."
-    cork unhappy "Дед, ты меня настораживаешь. У меня ж под ним ничего нет... чёрт, ещё и дверь закрыта, никак не поддаётся."
-    old_ "Снимай и л-ложись!"
-    cork neutral "Хорошо, хорошо, ты только не напрягайся, а то мало ли, сердце не выдержит. Мне хоть заплатят за это?"
-    old_ unhappy "Если не сд-делаешь, ты своей жизнью зап-платишь! Я здесь очень-оч-чень важный человек, между прочим! Или т-тебе кранты, или делаешь то, ч-что я говорю."
+    oldman unhappy "Себе если т-только. Ложись н-на кровать, живо!"
+    cork bath_puzzled "Это ещё зачем? Это какой-то агрессивный маркетинг хостела? У меня денег с собой нет, только полотенце это."
+    oldman neutral "И полот-тенце снимай."
+    cork bath_unhappy "Дед, ты меня настораживаешь. У меня ж под ним ничего нет... чёрт, ещё и дверь закрыта, никак не поддаётся."
+    oldman "Снимай и л-ложись!"
+    cork bath_neutral "Хорошо, хорошо, ты только не напрягайся, а то мало ли, сердце не выдержит. Мне хоть заплатят за это?"
+    oldman unhappy "Если не сд-делаешь, ты своей жизнью зап-платишь! Я здесь очень-оч-чень важный человек, между прочим! Или т-тебе кранты, или делаешь то, ч-что я говорю."
     cork "...Чёрт, походу он не шутит. Что тебе надо, старый? Я ректальным массажем не занимаюсь."
-    old_ neutral "Зато я зан-нимаюсь, кхе-кхе."
-    cork unhappy "Чт.. О-о, нет, только не это..."
-    old_ "Зато уйдёшь от-тсюда живым и, м-может быть, здоровым."
-    cork puzzled "А если я вдруг выломаю дверь и выбегу отсюда? Я не думаю, что ты сможешь меня догнать."
-    old_ "Ну и глуп-пый же ты! Тебя мои м-медвежатки накроют. Тю-тю из-з пушки и н-нет тебя."
+    oldman neutral "Зато я зан-нимаюсь, кхе-кхе."
+    cork bath_unhappy "Чт.. О-о, нет, только не это..."
+    oldman "Зато уйдёшь от-тсюда живым и, м-может быть, здоровым."
+    cork bath_puzzled "А если я вдруг выломаю дверь и выбегу отсюда? Я не думаю, что ты сможешь меня догнать."
+    oldman "Ну и глуп-пый же ты! Тебя мои м-медвежатки накроют. Тю-тю из-з пушки и н-нет тебя."
     cork "Постой, дед, какие ещё медвежатки? Ты о чём вообще? Постой-ка, а не ты ли это тот самый глава бандитской группировки?"
     cork "Ну, которые как клоуны раньше наряжались в костюмы и бегали по всему городу."
-    old_ "Да-да, кон-нечно, милок. Но сейчас не об эт-том."
-    cork neutral "Погоди, как это не об этом? Я же когда-то был..! Ай, нет, молчу-молчу. Не сейчас, так не сейчас. Говори, что ты там хотел."
-    old_ "Так вот-т. Согласишься со мной поуч-частвовать в процессе, я тебя и отпущу. А если н-нет сам виноват."
-    cork unhappy "Похоже, выбора у меня нет... Ладно уж, давай, что ты там хотел..." 
+    oldman "Да-да, кон-нечно, милок. Но сейчас не об эт-том."
+    cork bath_neutral "Погоди, как это не об этом? Я же когда-то был..! Ай, нет, молчу-молчу. Не сейчас, так не сейчас. Говори, что ты там хотел."
+    oldman "Так вот-т. Согласишься со мной поуч-частвовать в процессе, я тебя и отпущу. А если н-нет сам виноват."
+    cork bath_unhappy "Похоже, выбора у меня нет... Ладно уж, давай, что ты там хотел..." 
     stop music fadeout 1
     play music menu_ fadein 1
     window hide

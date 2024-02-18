@@ -319,6 +319,10 @@ screen navigation():
 
         textbutton _("Об игре") action ShowMenu("about")
 
+        textbutton _("Русский язык") action Language(None)
+        
+        textbutton _("English\nlanguage") action Language("english")
+
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Помощь не необходима и не относится к мобильным устройствам.
